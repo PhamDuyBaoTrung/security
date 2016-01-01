@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.security.person.Person" table="PERSON" catalog="security">
+        <id name="id" type="java.lang.Long">
+            <column name="USER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="USER_NAME" length="10" not-null="true" unique="true" />
+        </property>
+        <property name="passWord" type="string">
+            <column name="PASS_WORD" length="20" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>

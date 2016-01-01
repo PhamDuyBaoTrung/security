@@ -1,0 +1,7 @@
+package com.security.service;
+
+import com.security.person.TestDomain;
+
+public class TestService {
+	private TestDomain testDomain;
+}

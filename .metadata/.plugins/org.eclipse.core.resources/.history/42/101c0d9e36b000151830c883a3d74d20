@@ -1,0 +1,5 @@
+package com.security.service.user.impl;
+
+public class UserServiceImpl {
+
+}

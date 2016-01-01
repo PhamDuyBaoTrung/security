@@ -1,0 +1,22 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.security.person.User;
+import com.security.service.core.ServiceRegistery;
+
+@Controller
+public class LoginController {
+	@Autowired
+	ServiceRegistery serviceRegistery;
+	
+	/*
+     * This method will list all existing employees.
+     */
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String listEmployees(ModelMap model) {
+ 
+        User user = 
+        model.addAttribute("employees", employees);
+        return "allemployees";
+    }	
+}

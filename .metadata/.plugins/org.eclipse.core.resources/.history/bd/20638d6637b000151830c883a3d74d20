@@ -1,0 +1,22 @@
+package com.security.service.user.impl;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.Criteria;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.security.person.User;
+import com.security.service.user.UserService;
+
+@Transactional
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	SessionFactory sessionFactory;
+
+	public User getUserUsingUserNameAndPassword(String userName, String passWord) {
+		Criteria findUserCriteria = Crit
+	}
+
+}

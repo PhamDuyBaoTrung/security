@@ -1,0 +1,5 @@
+package com.security.service.core;
+
+public interface ServiceRegistery {
+	<T> GenericDomainService<T> forClass(Class<T> entity);
+}

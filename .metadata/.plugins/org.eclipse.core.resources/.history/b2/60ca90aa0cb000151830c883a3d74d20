@@ -1,0 +1,14 @@
+package com.security.service.core.impl;
+
+import com.security.service.core.DomainOrientedComponent;
+import com.security.service.core.GenericDomainService;
+import com.security.service.core.ServiceRegistery;
+
+public class SecurityServiceRegistery extends DefaultComponentRegistery<GenericDomainService<T>> implements ServiceRegistery {
+	@Override
+	public <T> GenericDomainService<T> forClass(Class<T> entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

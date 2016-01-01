@@ -1,0 +1,7 @@
+package com.security.service.repository.hibernate;
+
+import org.hibernate.SessionFactory;
+
+public class SecurityLocalSessionFactoryBean extends LocalSe {
+
+}

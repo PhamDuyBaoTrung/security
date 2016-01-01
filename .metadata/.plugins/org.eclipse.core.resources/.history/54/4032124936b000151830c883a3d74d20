@@ -1,0 +1,11 @@
+package com.security.service.user;
+
+public interface UserService {
+	/**
+	 * Retrive a User using userName and PassWord
+	 * @param userName
+	 * @param passWord
+	 * @return
+	 */
+	User getUserByUserNameAndPassword(String userName, String passWord);
+}

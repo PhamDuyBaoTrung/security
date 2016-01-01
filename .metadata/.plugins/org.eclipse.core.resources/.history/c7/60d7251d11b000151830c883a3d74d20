@@ -1,0 +1,7 @@
+package com.security.person;
+
+public class Person {
+	private Long id;
+	private String firstName;
+	private Sstring lastName;
+}

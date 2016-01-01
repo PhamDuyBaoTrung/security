@@ -1,0 +1,12 @@
+package com.security.service.repository.hibernate;
+
+import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.LocalSessionFactoryBean;
+import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
+
+public class SecurityLocalSessionFactoryBean extends LocalSessionFactoryBean {
+	@Override
+	protected SessionFactory buildSessionFactory(LocalSessionFactoryBuilder sfb) {
+		return this.buildSessionFactory(sfb);
+	}
+}

@@ -1,0 +1,5 @@
+package com.security.service.repository.hibernate;
+
+public class LocalSessionFactoryBean {
+
+}

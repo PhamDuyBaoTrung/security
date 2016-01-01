@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Dec 31 16:04:30 GMT-12:00 2015
+org.eclipse.jst.j2ee.server\:security-service=WEB-INF/lib/security-service-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:security-domain=WEB-INF/lib/security-domain-0.0.1-SNAPSHOT.jar

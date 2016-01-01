@@ -1,0 +1,13 @@
+package com.security.service.user.impl;
+
+import com.security.person.User;
+import com.security.service.user.UserService;
+
+public class UserServiceImpl implements UserService{
+
+	public User getUserUsingUserNameAndPassword(String userName, String passWord) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.security.service.user.impl;
+
+import javax.transaction.Transactional;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.security.person.User;
+import com.security.service.user.UserService;
+
+@Transactional
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	SessionFactory sessionFactory;
+
+	public User getUserUsingUserNameAndPassword(String userName, String passWord) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		if(currentSession == null) {
+			currentSession = sessionFactory.openSession();
+		}
+			
+		Criteria findUserCriteria = currentSession.createCriteria(User.class);
+		findUserCriteria.add(Restrictions.eq("userName", userName)).add(Restrictions.and(Restrictions.eq("passWord", passWord)));
+		
+		List<User> users = findUserCriteria.list();
+	}
+
+}

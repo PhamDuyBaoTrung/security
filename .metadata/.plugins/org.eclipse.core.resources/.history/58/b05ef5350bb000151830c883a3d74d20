@@ -1,0 +1,5 @@
+package com.security.service.core;
+
+public interface GenericDomainService<T> extends DomainOrientedComponent<T> {
+
+}

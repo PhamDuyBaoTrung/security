@@ -1,0 +1,7 @@
+package com.security.service.core.impl;
+
+import com.security.service.core.ServiceRegistery;
+
+public class SecurityServiceRegistery extends DefaultComponentRegistery<DomainOrientedComponent<?>> implements ServiceRegistery {
+
+}

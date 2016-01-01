@@ -1,0 +1,5 @@
+package com.security.service.core;
+
+public interface ServiceRegistery {
+	<T> Class<T> forClass(Class<T> entity);
+}

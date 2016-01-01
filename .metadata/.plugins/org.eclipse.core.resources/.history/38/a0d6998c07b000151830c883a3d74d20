@@ -1,0 +1,5 @@
+package com.security.service.repository.core;
+
+public interface SecurityRepository<T> extends HibernateRe {
+
+}

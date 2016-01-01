@@ -1,0 +1,11 @@
+package com.security.service.core;
+
+import java.util.List;
+
+public interface GenericDomainService<T> extends DomainOrientedComponent<T> {
+	T save(entity T);
+	
+	List<T> saveAll(List<T> entities);
+	
+	T findOne(Long id);
+}
